@@ -13,8 +13,6 @@ export default function initScrollToSection() {
       top: SctionTopDistance,
       behavior: "smooth",
     });
-
-    console.log(section);
   }
 
   linksInternos.forEach((link) => {

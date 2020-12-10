@@ -218,19 +218,19 @@ body {
 }
 
 /* JS */
-.js [data-tab="content"] section {
+.js .js-tabcontent section {
   display: none;
 }
 
-[data-tab="content"] section.ativo {
+.js-tabcontent section.ativo {
   display: block !important;
 }
 
-[data-tab="content"] section.ativo.show-right {
+.js-tabcontent section.ativo.show-right {
   animation: show-right .5s forwards;
 }
 
-[data-tab="content"] section.ativo.show-down {
+.js-tabcontent section.ativo.show-down {
   animation: show-down .5s forwards;
 }
 
@@ -256,20 +256,20 @@ body {
   }
 }
 
-.js [data-anime='accordion'] dd {
+.js .js-accordion dd {
   display: none;
 }
 
-[data-anime='accordion'] dt::after {
+.js-accordion dt::after {
   content: '⮟';
   margin-left: 10px;
 }
 
-[data-anime='accordion'] dt.ativo::after {
+.js-accordion dt.ativo::after {
   content: '⮝';
 }
 
-[data-anime='accordion'] dd.ativo {
+.js-accordion dd.ativo {
   display: block;
   animation: slideDown .5s forwards;
 }
@@ -285,13 +285,13 @@ body {
   }
 }
 
-.js [data-anime='scroll'] {
+.js .js-scroll {
   opacity: 0;
   transform: translate3d(-30px,0,0);
   transition: .3s;
 }
 
-.js [data-anime='scroll'].ativo {
+.js .js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0,0,0);
   transition: .3s;
