@@ -1,6 +1,6 @@
 // Animação de sections
 export default function initAnimaScroll() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll("[data-anime='scroll']");
 
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.7;
@@ -11,6 +11,8 @@ export default function initAnimaScroll() {
         const isSectionVisible = sectionTopDistance - windowMetade < 0;
         if (isSectionVisible) {
           section.classList.add("ativo");
+        } else if (section.classList.contains('ativo')) {
+          section.classList.remove('ativo');
         }
       });
     }
