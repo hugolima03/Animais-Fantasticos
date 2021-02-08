@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import initScrollToSection from './modules/scroll-suave.js';
 import initAnimaScroll from './modules/scroll-animacao.js';
 import initAccordion from './modules/accordion.js';

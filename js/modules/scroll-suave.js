@@ -5,17 +5,17 @@ export default function initScrollToSection() {
   function scrollToSection(event) {
     event.preventDefault();
 
-    const href = event.currentTarget.getAttribute("href");
+    const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
     const SctionTopDistance = section.offsetTop;
 
     window.scrollTo({
       top: SctionTopDistance,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   }
 
   linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
+    link.addEventListener('click', scrollToSection);
   });
 }
