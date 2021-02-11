@@ -2,7 +2,7 @@
   grid-column: 2 / 4;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-gap: 30px;
 }
 
 @media (max-width: 700px) {
@@ -12,8 +12,8 @@
 }
 
 .numeros-grid h3 {
-  font-size: 2rem;
   font-family: 'Playfair Display SC';
+  font-size: 2rem;
   margin-bottom: .5rem;
 }
 

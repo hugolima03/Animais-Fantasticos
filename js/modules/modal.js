@@ -9,8 +9,9 @@ export default function initModal() {
   }
 
   function cliqueForaModal(event) {
-    // eslint-disable-next-line no-unused-expressions
-    event.target === this ? toggleModal(event) : null;
+    if (event.target === this) {
+      toggleModal(event);
+    }
   }
 
   if (botaoAbrir && botaoFechar && containerModal) {

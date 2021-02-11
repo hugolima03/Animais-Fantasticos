@@ -1,5 +1,5 @@
 {
-  "name": "animais-fantasticos",
+  "name": "animais-eslint",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -7,27 +7,20 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hugolima03/Animais-Fantasticos.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hugolima03/Animais-Fantasticos/issues"
-  },
-  "homepage": "https://github.com/hugolima03/Animais-Fantasticos#readme",
   "devDependencies": {
-    "eslint": "^7.19.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "webpack": "^5.21.2",
-    "webpack-cli": "^4.5.0"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "@babel/cli": "^7.12.13",
-    "@babel/core": "^7.12.13",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.12.13"
+    "@babel/polyfill": "^7.0.0",
+    "whatwg-fetch": "^2.0.4"
   }
 }

@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions
 import outsideClick from './outsideclick.js';
 
 export default function initDropdownMenu() {
@@ -11,6 +10,7 @@ export default function initDropdownMenu() {
       this.classList.remove('active');
     });
   }
+
   dropdownMenus.forEach((menu) => {
     ['touchstart', 'click'].forEach((userEvent) => {
       menu.addEventListener(userEvent, handleClick);
